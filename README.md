@@ -53,3 +53,4 @@ There are original implementations of this Speedtest idea in the Open Horizon
 examples repository.  This variant is somewhat simpler.
 
 - [Horizon Speedtest REST Service](https://github.com/open-horizon/examples/tree/master/edge/services/speedtest)
+- [Horizon Watson IoT MQTT Speedtest Service](https://github.com/open-horizon/examples/tree/master/edge/wiotp/speedtest2wiotp)
