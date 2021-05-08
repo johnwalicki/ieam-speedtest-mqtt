@@ -16,7 +16,7 @@ Watson IoT Platform Quickstart and plots the results in a chart.
 
 ###
 
-Begin by editing the variables at the top of the Makefile as desired. If you plan to push it to a Docker registery, make sure you give your docker ID. You may also want to create unique names for your **service** and **pattern** (necessary if you are sharing a tenancy with other users and you are all publishing this service).
+Begin by editing the variables at the top of the Makefile as desired. If you plan to push it to a Docker registry, make sure you give your docker ID. You may also want to create unique names for your **service** and **pattern** (necessary if you are running a multi-tentant IEAM instance with other users and you are all publishing this service).
 
 To play with this outside of Open Horizon:
 
@@ -35,7 +35,7 @@ docker login
 make build
 make push
 make publish-service
-make publish-patterrn
+make publish-pattern
 ```
 
 Once it is published, you can use:
