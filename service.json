@@ -11,7 +11,7 @@
   "deployment": {
     "services": {
       "$SERVICE_NAME": {
-        "image": "$SERVICE_CONTAINER",
+        "image": "$SERVICE_CONTAINER"
       }
     }
   }
