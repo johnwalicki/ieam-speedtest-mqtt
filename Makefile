@@ -27,7 +27,7 @@ run: stop
           $(DOCKERHUB_ID)/$(SERVICE_NAME):$(SERVICE_VERSION)
 
 test:
-	xdg-open https://quickstart.internetofthings.ibmcloud.com/#/device/speedtest/sensor/
+	xdg-open https://quickstart.internetofthings.ibmcloud.com/
 
 push:
 	docker push $(DOCKERHUB_ID)/$(SERVICE_NAME):$(SERVICE_VERSION)
