@@ -24,7 +24,6 @@ To play with this outside of Open Horizon:
 make build
 make run
 ...
-make test
 make stop
 ```
 
@@ -44,7 +43,6 @@ Once it is published, you can use:
 make register-pattern
 watch hzn agreement list
 ...
-make test
 ```
 
 ### Other resources
