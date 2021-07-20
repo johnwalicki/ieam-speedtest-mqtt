@@ -1,12 +1,12 @@
-# IBM Edge Application Manager Speedtest to Watson IoT Platform Quickstart
+# IBM Edge Application Manager Speedtest to Watson IoT Platform
 
 This repository builds a Docker containerized workload that can be deployed to
 an edge node running the Open Horizon agent. The workload can be configured as
 a managed service and pattern in IBM Edge Application Manager.  It runs
 Speedtest periodically and sends the download bandwidth results over MQTT to
-Watson IoT Platform Quickstart and plots the results in a chart.
+Watson IoT Platform and plots the results in a chart.
 
-![Quickstart Chart](Speedtest-Quickstart-results.png)
+![MQTT Chart](Speedtest-MQTT-results.png)
 
 ### Prerequistes
 

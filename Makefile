@@ -1,9 +1,9 @@
 # Speedtest service that sends the output to Watson IoT Platform Quickstart via MQTT
 
 DOCKERHUB_ID:=walicki
-SERVICE_NAME:="speedtest-mqtt-example"
-SERVICE_VERSION:="1.0.0"
-PATTERN_NAME:="pattern-speedtest-mqtt-example"
+SERVICE_NAME:="speedtest-mqtt-example-instructor"
+SERVICE_VERSION:="2.0.0"
+PATTERN_NAME:="pattern-speedtest-mqtt-example-instructor"
 ARCH:="amd64"
 
 # Leave blank for open DockerHub containers
@@ -14,7 +14,8 @@ default: build run
 
 build:
 	docker build -t $(DOCKERHUB_ID)/$(SERVICE_NAME):$(SERVICE_VERSION) .
-
+	docker image prune --filter label=stage=builder --force
+	
 dev: stop build
 	docker run -it --name ${SERVICE_NAME} \
           $(DOCKERHUB_ID)/$(SERVICE_NAME):$(SERVICE_VERSION) /bin/bash
