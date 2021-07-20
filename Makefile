@@ -1,4 +1,4 @@
-# Speedtest service that sends the output to Watson IoT Platform Quickstart via MQTT
+# Speedtest service that sends the output to Watson IoT Platform via MQTT
 
 DOCKERHUB_ID:=walicki
 SERVICE_NAME:="speedtest-mqtt-example-instructor"
@@ -26,9 +26,6 @@ run: stop
           --restart unless-stopped \
           $(DOCKERHUB_ID)/$(SERVICE_NAME):$(SERVICE_VERSION)
 
-test:
-	xdg-open https://quickstart.internetofthings.ibmcloud.com/
-
 push:
 	docker push $(DOCKERHUB_ID)/$(SERVICE_NAME):$(SERVICE_VERSION)
 
@@ -55,4 +52,4 @@ stop:
 clean:
 	@docker rmi -f $(DOCKERHUB_ID)/$(SERVICE_NAME):$(SERVICE_VERSION) >/dev/null 2>&1 || :
 
-.PHONY: build dev run push publish-service publish-pattern test stop clean
+.PHONY: build dev run push publish-service publish-pattern stop clean
