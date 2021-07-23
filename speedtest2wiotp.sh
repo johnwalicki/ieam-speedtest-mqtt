@@ -4,6 +4,7 @@ export SPEEDTEST_PAUSE_SEC=10
 export WIOTP_ORG=spzdfr
 export WIOTP_DEVICE_TYPE=SpeedTest
 export WIOTP_DEVICE_TOKEN=`echo ${HZN_EXCHANGE_USER_AUTH} | cut -d- -f2`
+export WIOTP_DEVICE_TOKEN=jGGPhkT_gFm1uXElDDQ
 
 if [[  -z "${HZN_DEVICE_ID}" ]]; then
   export WIOTP_DEVICE_ID=SpeedTest002
